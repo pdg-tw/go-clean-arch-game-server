@@ -65,7 +65,7 @@ const (
 	IP6_ALERT_MLD                   = 0x0000
 	IP6_ALERT_RSVP                  = 0x0001
 	IPPORT_RESERVED                 = 1024
-	IPPORT_USERRESERVED             = 5000
+	IPPORT_USERRESERVED             = 5003
 	IPPROTO_AH                      = 51
 	SOL_AH                          = 51
 	IPPROTO_DSTOPTS                 = 60

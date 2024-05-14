@@ -5,18 +5,10 @@ package server
 
 import (
 	"encoding/json"
-	fileAdapter "github.com/casbin/casbin/v2/persist/file-adapter"
 	fiberCasbin "go-clean-arch-game-server/internal/middleware/fibercasbin"
 
-	"github.com/gofiber/fiber/v2"
-	fiberCache "github.com/gofiber/fiber/v2/middleware/cache"
-	"github.com/gofiber/fiber/v2/middleware/cors"
-	"github.com/gofiber/fiber/v2/middleware/etag"
-	fiberLog "github.com/gofiber/fiber/v2/middleware/logger"
-	"github.com/gofiber/fiber/v2/middleware/recover"
-	"github.com/gofiber/fiber/v2/utils"
-	"github.com/gofiber/swagger"
-	"github.com/google/wire"
+	fileAdapter "github.com/casbin/casbin/v2/persist/file-adapter"
+
 	"go-clean-arch-game-server/config"
 	"go-clean-arch-game-server/docs"
 	"go-clean-arch-game-server/internal/api"
@@ -31,6 +23,16 @@ import (
 	loggerPkg "go-clean-arch-game-server/pkg/logger"
 	"os"
 	"time"
+
+	"github.com/gofiber/fiber/v2"
+	fiberCache "github.com/gofiber/fiber/v2/middleware/cache"
+	"github.com/gofiber/fiber/v2/middleware/cors"
+	"github.com/gofiber/fiber/v2/middleware/etag"
+	fiberLog "github.com/gofiber/fiber/v2/middleware/logger"
+	"github.com/gofiber/fiber/v2/middleware/recover"
+	"github.com/gofiber/fiber/v2/utils"
+	"github.com/gofiber/swagger"
+	"github.com/google/wire"
 )
 
 // Server struct
@@ -63,7 +65,7 @@ func New() (*Server, error) {
 // @contact.email minkj1992@gmail.com
 // @license.name Apache 2.0
 // @license.url http://www.apache.org/licenses/LICENSE-2.0.html
-// @host localhost:5000
+// @host localhost:5003
 // @BasePath /
 func NewServer(
 	cfg *config.Configuration,

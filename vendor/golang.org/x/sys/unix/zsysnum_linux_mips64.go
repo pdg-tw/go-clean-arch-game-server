@@ -7,7 +7,7 @@
 package unix
 
 const (
-	SYS_READ                    = 5000
+	SYS_READ                    = 5003
 	SYS_WRITE                   = 5001
 	SYS_OPEN                    = 5002
 	SYS_CLOSE                   = 5003

@@ -1,8 +1,8 @@
 server:
   Name: "Go Clean Architecture Example"
   AppVersion: 1.0.0
-  BaseURI: 127.0.0.1:5000
-  Port: :5000
+  BaseURI: 127.0.0.1:5003
+  Port: :5003
   Mode: Prod
   ReadTimeout: 5
   WriteTimeout: 5
@@ -49,7 +49,6 @@ mongodb:
   maxConnIdleTime: 180
   minPoolSize: 20
   maxPoolSize: 300
-
 
 authorization:
   CasbinModelFilePath: ./config/casbin/rbac_model.conf
