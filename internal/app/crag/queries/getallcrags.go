@@ -2,11 +2,11 @@ package queries
 
 import (
 	"context"
-	"go-clean-architecture-example/internal/common/decorator"
-	"go-clean-architecture-example/internal/common/utils"
-	dto "go-clean-architecture-example/internal/domain/dto/crag"
-	"go-clean-architecture-example/internal/domain/entities/crag"
-	"go-clean-architecture-example/pkg/logger"
+	"go-clean-arch-game-server/internal/common/decorator"
+	"go-clean-arch-game-server/internal/common/utils"
+	dto "go-clean-arch-game-server/internal/domain/dto/crag"
+	"go-clean-arch-game-server/internal/domain/entities/crag"
+	"go-clean-arch-game-server/pkg/logger"
 )
 
 // GetAllCragsRequestHandler Contains the dependencies of the Handler

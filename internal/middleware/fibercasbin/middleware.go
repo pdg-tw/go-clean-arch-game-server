@@ -4,7 +4,7 @@ import (
 	"github.com/casbin/casbin/v2/persist"
 	fiberCasbin "github.com/gofiber/contrib/casbin"
 	"github.com/gofiber/fiber/v2"
-	"go-clean-architecture-example/internal/common/errors"
+	"go-clean-arch-game-server/internal/common/errors"
 )
 
 type Config struct {

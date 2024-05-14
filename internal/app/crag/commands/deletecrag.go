@@ -3,10 +3,10 @@ package commands
 import (
 	"context"
 	"fmt"
-	"go-clean-architecture-example/internal/common/decorator"
-	dto "go-clean-architecture-example/internal/domain/dto/crag"
-	"go-clean-architecture-example/internal/domain/entities/crag"
-	"go-clean-architecture-example/pkg/logger"
+	"go-clean-arch-game-server/internal/common/decorator"
+	dto "go-clean-arch-game-server/internal/domain/dto/crag"
+	"go-clean-arch-game-server/internal/domain/entities/crag"
+	"go-clean-arch-game-server/pkg/logger"
 )
 
 // DeleteCragRequestHandler Handler Struct with Dependencies

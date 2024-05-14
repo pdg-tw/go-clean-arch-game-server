@@ -2,13 +2,13 @@ package commands
 
 import (
 	"context"
-	"go-clean-architecture-example/internal/common/decorator"
-	dto "go-clean-architecture-example/internal/domain/dto/crag"
-	"go-clean-architecture-example/internal/domain/entities/crag"
-	"go-clean-architecture-example/internal/domain/entities/notification"
-	"go-clean-architecture-example/pkg/logger"
-	timePkg "go-clean-architecture-example/pkg/time"
-	uuidPkg "go-clean-architecture-example/pkg/uuid"
+	"go-clean-arch-game-server/internal/common/decorator"
+	dto "go-clean-arch-game-server/internal/domain/dto/crag"
+	"go-clean-arch-game-server/internal/domain/entities/crag"
+	"go-clean-arch-game-server/internal/domain/entities/notification"
+	"go-clean-arch-game-server/pkg/logger"
+	timePkg "go-clean-arch-game-server/pkg/time"
+	uuidPkg "go-clean-arch-game-server/pkg/uuid"
 )
 
 type AddCragRequestHandler decorator.CommandHandler[*dto.AddCragRequest]

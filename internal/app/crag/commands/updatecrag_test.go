@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"github.com/google/uuid"
 	"github.com/stretchr/testify/assert"
-	dto "go-clean-architecture-example/internal/domain/dto/crag"
-	"go-clean-architecture-example/internal/domain/entities/crag"
+	dto "go-clean-arch-game-server/internal/domain/dto/crag"
+	"go-clean-arch-game-server/internal/domain/entities/crag"
 	"testing"
 	"time"
 )

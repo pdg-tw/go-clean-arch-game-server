@@ -3,8 +3,8 @@ package notification
 import (
 	"encoding/json"
 	"github.com/google/wire"
-	"go-clean-architecture-example/internal/domain/entities/notification"
-	"go-clean-architecture-example/pkg/logger"
+	"go-clean-arch-game-server/internal/domain/entities/notification"
+	"go-clean-arch-game-server/pkg/logger"
 )
 
 var Set = wire.NewSet(

@@ -3,11 +3,11 @@ package api
 import (
 	"github.com/gofiber/fiber/v2"
 	"github.com/google/uuid"
-	"go-clean-architecture-example/internal/app"
-	"go-clean-architecture-example/internal/common/errors"
-	"go-clean-architecture-example/internal/common/responses"
-	"go-clean-architecture-example/internal/common/validator"
-	dto "go-clean-architecture-example/internal/domain/dto/crag"
+	"go-clean-arch-game-server/internal/app"
+	"go-clean-arch-game-server/internal/common/errors"
+	"go-clean-arch-game-server/internal/common/responses"
+	"go-clean-arch-game-server/internal/common/validator"
+	dto "go-clean-arch-game-server/internal/domain/dto/crag"
 )
 
 type CragHttpApi interface {

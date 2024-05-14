@@ -2,7 +2,7 @@ package decorator
 
 import (
 	"context"
-	"go-clean-architecture-example/pkg/logger"
+	"go-clean-arch-game-server/pkg/logger"
 )
 
 func ApplyQueryDecorators[H any, R any](handler QueryHandler[H, R], logger logger.Logger, metricsClient MetricsClient) QueryHandler[H, R] {

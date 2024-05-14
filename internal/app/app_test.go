@@ -2,14 +2,14 @@ package app
 
 import (
 	"github.com/stretchr/testify/assert"
-	"go-clean-architecture-example/internal/app/crag/commands"
-	"go-clean-architecture-example/internal/app/crag/queries"
-	"go-clean-architecture-example/internal/common/metrics"
-	"go-clean-architecture-example/internal/domain/entities/crag"
-	"go-clean-architecture-example/internal/domain/entities/notification"
-	logger2 "go-clean-architecture-example/pkg/logger"
-	"go-clean-architecture-example/pkg/time"
-	"go-clean-architecture-example/pkg/uuid"
+	"go-clean-arch-game-server/internal/app/crag/commands"
+	"go-clean-arch-game-server/internal/app/crag/queries"
+	"go-clean-arch-game-server/internal/common/metrics"
+	"go-clean-arch-game-server/internal/domain/entities/crag"
+	"go-clean-arch-game-server/internal/domain/entities/notification"
+	logger2 "go-clean-arch-game-server/pkg/logger"
+	"go-clean-arch-game-server/pkg/time"
+	"go-clean-arch-game-server/pkg/uuid"
 	"testing"
 )
 

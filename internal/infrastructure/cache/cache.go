@@ -2,8 +2,8 @@ package cache
 
 import (
 	"github.com/google/wire"
-	"go-clean-architecture-example/config"
-	"go-clean-architecture-example/pkg/cache/redis"
+	"go-clean-arch-game-server/config"
+	"go-clean-arch-game-server/pkg/cache/redis"
 	"time"
 )
 

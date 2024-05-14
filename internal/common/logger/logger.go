@@ -2,8 +2,8 @@ package logger
 
 import (
 	"github.com/google/wire"
-	"go-clean-architecture-example/config"
-	"go-clean-architecture-example/pkg/logger"
+	"go-clean-arch-game-server/config"
+	"go-clean-arch-game-server/pkg/logger"
 )
 
 var Set = wire.NewSet(

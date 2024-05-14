@@ -1,7 +1,7 @@
 package logger
 
 import (
-	"go-clean-architecture-example/config"
+	"go-clean-arch-game-server/config"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 )

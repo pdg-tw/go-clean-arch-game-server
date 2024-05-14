@@ -3,7 +3,7 @@ package persistence
 import (
 	"github.com/google/uuid"
 	"github.com/stretchr/testify/assert"
-	"go-clean-architecture-example/internal/domain/entities/crag"
+	"go-clean-arch-game-server/internal/domain/entities/crag"
 	"testing"
 )
 

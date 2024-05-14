@@ -1,7 +1,7 @@
 package main
 
 import (
-	"go-clean-architecture-example/internal"
+	"go-clean-arch-game-server/internal"
 	"os"
 	"os/signal"
 	"runtime"

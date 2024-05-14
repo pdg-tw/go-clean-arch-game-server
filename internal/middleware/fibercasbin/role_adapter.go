@@ -2,7 +2,7 @@ package fibercasbin
 
 import (
 	"github.com/gofiber/fiber/v2"
-	"go-clean-architecture-example/internal/common/jwt"
+	"go-clean-arch-game-server/internal/common/jwt"
 	"strings"
 )
 

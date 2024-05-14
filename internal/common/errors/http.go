@@ -1,7 +1,7 @@
 package errors
 
 import (
-	"go-clean-architecture-example/internal/domain/enum"
+	"go-clean-arch-game-server/internal/domain/enum"
 )
 
 type Error struct {

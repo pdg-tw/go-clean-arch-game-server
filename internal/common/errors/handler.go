@@ -3,7 +3,7 @@ package errors
 import (
 	"errors"
 	"github.com/gofiber/fiber/v2"
-	"go-clean-architecture-example/internal/common/responses"
+	"go-clean-arch-game-server/internal/common/responses"
 )
 
 func CustomErrorHandler(ctx *fiber.Ctx, err error) error {

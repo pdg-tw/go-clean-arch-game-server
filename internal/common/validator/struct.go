@@ -1,7 +1,7 @@
 package validator
 
 import (
-	"go-clean-architecture-example/pkg/utils/structure"
+	"go-clean-arch-game-server/pkg/utils/structure"
 	"sync"
 )
 

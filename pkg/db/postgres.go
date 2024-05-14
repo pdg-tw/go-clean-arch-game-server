@@ -2,9 +2,9 @@ package db
 
 import (
 	"fmt"
-	"go-clean-architecture-example/config"
-	"go-clean-architecture-example/pkg/db/gorm"
-	"go-clean-architecture-example/pkg/logger"
+	"go-clean-arch-game-server/config"
+	"go-clean-arch-game-server/pkg/db/gorm"
+	"go-clean-arch-game-server/pkg/logger"
 )
 
 const (

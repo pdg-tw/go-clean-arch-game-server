@@ -1,7 +1,7 @@
 package conditions
 
 import (
-	"go-clean-architecture-example/pkg/db/mongo/utils"
+	"go-clean-arch-game-server/pkg/db/mongo/utils"
 	"testing"
 )
 

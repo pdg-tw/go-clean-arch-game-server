@@ -2,7 +2,7 @@ package checks
 
 import (
 	"fmt"
-	"go-clean-architecture-example/pkg/health"
+	"go-clean-arch-game-server/pkg/health"
 	"sync"
 	"time"
 )

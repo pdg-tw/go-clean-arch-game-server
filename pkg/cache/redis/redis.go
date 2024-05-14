@@ -3,7 +3,7 @@ package redis
 import (
 	"context"
 	"github.com/redis/go-redis/v9"
-	"go-clean-architecture-example/config"
+	"go-clean-arch-game-server/config"
 	"strings"
 	"time"
 )

@@ -1,4 +1,4 @@
-module go-clean-architecture-example
+module go-clean-arch-game-server
 
 go 1.19
 

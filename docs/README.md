@@ -14,9 +14,9 @@
     <a href="https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/truanguyenvan/go-clean-architecture-example/issues">Report Bug</a>
+    <a href="https://github.com/pdg-tw/go-clean-arch-game-server/issues">Report Bug</a>
     ·
-    <a href="https://github.com/truanguyenvan/go-clean-architecture-example/issues/new">Request Feature</a>
+    <a href="https://github.com/pdg-tw/go-clean-arch-game-server/issues/new">Request Feature</a>
   </p>
 </p>
 
@@ -140,10 +140,10 @@ make clean ## # remove binary
 
 ## Licence
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/truanguyenvan/go-clean-architecture-example/blob/master/LICENSE)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/pdg-tw/go-clean-arch-game-server/blob/master/LICENSE)
 
 See the contents of the LICENSE file for details
 
 ## Contact
 
-Having any issues or troubles getting started? Drop a mail to truanguyenvan@gmail.com or [Raise a Bug or Feature Request](https://github.com/truanguyenvan/go-clean-architecture-example/issues/new). Always happy to help.
+Having any issues or troubles getting started? Drop a mail to truanguyenvan@gmail.com or [Raise a Bug or Feature Request](https://github.com/pdg-tw/go-clean-arch-game-server/issues/new). Always happy to help.

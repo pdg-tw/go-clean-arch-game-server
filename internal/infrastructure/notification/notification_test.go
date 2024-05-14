@@ -2,8 +2,8 @@ package notification
 
 import (
 	"github.com/stretchr/testify/assert"
-	"go-clean-architecture-example/internal/domain/entities/notification"
-	loggerPkg "go-clean-architecture-example/pkg/logger"
+	"go-clean-arch-game-server/internal/domain/entities/notification"
+	loggerPkg "go-clean-arch-game-server/pkg/logger"
 	"testing"
 )
 

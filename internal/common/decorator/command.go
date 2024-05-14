@@ -2,7 +2,7 @@ package decorator
 
 import (
 	"context"
-	"go-clean-architecture-example/pkg/logger"
+	"go-clean-arch-game-server/pkg/logger"
 )
 
 func ApplyCommandDecorators[H any](handler CommandHandler[H], logger logger.Logger, metricsClient MetricsClient) CommandHandler[H] {

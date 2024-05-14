@@ -3,7 +3,7 @@ package gorm
 import (
 	"database/sql"
 	"errors"
-	"go-clean-architecture-example/pkg/logger"
+	"go-clean-arch-game-server/pkg/logger"
 	"gorm.io/driver/mysql"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"

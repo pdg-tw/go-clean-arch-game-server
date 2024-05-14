@@ -2,7 +2,7 @@ package decorator
 
 import (
 	"context"
-	zapLogger "go-clean-architecture-example/pkg/logger"
+	zapLogger "go-clean-arch-game-server/pkg/logger"
 	"go.uber.org/zap"
 )
 

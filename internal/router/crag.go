@@ -3,7 +3,7 @@ package router
 import (
 	"github.com/gofiber/contrib/casbin"
 	"github.com/gofiber/fiber/v2"
-	"go-clean-architecture-example/internal/api"
+	"go-clean-arch-game-server/internal/api"
 )
 
 type CragRouter interface {

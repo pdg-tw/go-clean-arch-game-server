@@ -3,8 +3,8 @@ package persistence
 import (
 	"fmt"
 	"github.com/google/uuid"
-	"go-clean-architecture-example/internal/common/errors"
-	"go-clean-architecture-example/internal/domain/entities/crag"
+	"go-clean-arch-game-server/internal/common/errors"
+	"go-clean-arch-game-server/internal/domain/entities/crag"
 )
 
 type CragMemRepository struct {

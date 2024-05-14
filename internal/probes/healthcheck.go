@@ -1,10 +1,10 @@
 package probes
 
 import (
-	"go-clean-architecture-example/config"
-	"go-clean-architecture-example/pkg/health"
-	infraHealthcheck "go-clean-architecture-example/pkg/health/checks/infra"
-	interHealthcheck "go-clean-architecture-example/pkg/health/checks/inter"
+	"go-clean-arch-game-server/config"
+	"go-clean-arch-game-server/pkg/health"
+	infraHealthcheck "go-clean-arch-game-server/pkg/health/checks/infra"
+	interHealthcheck "go-clean-arch-game-server/pkg/health/checks/inter"
 	"time"
 )
 
