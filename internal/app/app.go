@@ -3,8 +3,10 @@ package app
 import (
 	"go-clean-arch-game-server/internal/app/crag/commands"
 	"go-clean-arch-game-server/internal/app/crag/queries"
+	memcommands "go-clean-arch-game-server/internal/app/member/commands"
 	"go-clean-arch-game-server/internal/common/metrics"
 	"go-clean-arch-game-server/internal/domain/entities/crag"
+	"go-clean-arch-game-server/internal/domain/entities/member"
 	"go-clean-arch-game-server/internal/domain/entities/notification"
 	"go-clean-arch-game-server/pkg/logger"
 	"go-clean-arch-game-server/pkg/time"
@@ -22,6 +24,7 @@ type Commands struct {
 	AddCragHandler    commands.AddCragRequestHandler
 	UpdateCragHandler commands.UpdateCragRequestHandler
 	DeleteCragHandler commands.DeleteCragRequestHandler
+	AddMemberHandler  memcommands.AddMemberRequestHandler
 }
 
 type Application struct {
@@ -29,7 +32,7 @@ type Application struct {
 	Commands Commands
 }
 
-func NewApplication(cragRepo crag.Repository, ns notification.Service, logger logger.Logger) Application {
+func NewApplication(cragRepo crag.Repository, memberRepo member.Repository, ns notification.Service, logger logger.Logger) Application {
 	// init base
 	metricsClient := metrics.NoOp{}
 	tp := time.NewTimeProvider()
@@ -43,6 +46,7 @@ func NewApplication(cragRepo crag.Repository, ns notification.Service, logger lo
 			AddCragHandler:    commands.NewAddCragRequestHandler(up, tp, cragRepo, ns, logger, metricsClient),
 			UpdateCragHandler: commands.NewUpdateCragRequestHandler(cragRepo, logger, metricsClient),
 			DeleteCragHandler: commands.NewDeleteCragRequestHandler(cragRepo, logger, metricsClient),
+			AddMemberHandler:  memcommands.NewAddMemberRequestHandler(up, tp, memberRepo, ns, logger, metricsClient),
 		},
 	}
 }

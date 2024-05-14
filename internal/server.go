@@ -70,6 +70,7 @@ func New() (*Server, error) {
 func NewServer(
 	cfg *config.Configuration,
 	cragRouter router.CragRouter,
+	memberRouter router.MemberRouter,
 	healthCheckApp probes.HealthCheckApplication,
 	logger loggerPkg.Logger,
 	cacheEngine cache.Engine) *Server {
@@ -147,6 +148,7 @@ func NewServer(
 	api := app.Group("/api")
 	v1 := api.Group("/v1")
 	cragRouter.Init(&v1, authz)
+	memberRouter.Init(&v1, authz)
 
 	return &Server{
 		cfg:    cfg,

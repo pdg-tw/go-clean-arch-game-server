@@ -42,17 +42,20 @@ func New() (*Server, error) {
 		return nil, err
 	}
 	repository := persistence.NewCragMemRepository()
+	memberRepository := persistence.NewMemberMemRepository()
 	loggerLogger := logger.NewLoggerAplication(configuration)
 	service := notification.NewNotificationService(loggerLogger)
-	application := app.NewApplication(repository, service, loggerLogger)
+	application := app.NewApplication(repository, memberRepository, service, loggerLogger)
 	cragHttpApi := api.NewCragHttpApi(application)
 	cragRouter := router.NewCragRouter(cragHttpApi)
+	memberHttpApi := api.NewMemberHttpApi(application)
+	memberRouter := router.NewMemberRouter(memberHttpApi)
 	healthCheckApplication := probes.NewHealthChecker(configuration)
 	engine, err := cache.NewRedisCache(configuration)
 	if err != nil {
 		return nil, err
 	}
-	server := NewServer(configuration, cragRouter, healthCheckApplication, loggerLogger, engine)
+	server := NewServer(configuration, cragRouter, memberRouter, healthCheckApplication, loggerLogger, engine)
 	return server, nil
 }
 
@@ -78,6 +81,7 @@ type Server struct {
 func NewServer(
 	cfg *config.Configuration,
 	cragRouter router.CragRouter,
+	memberRouter router.MemberRouter,
 	healthCheckApp probes.HealthCheckApplication, logger4 logger2.Logger,
 
 	cacheEngine cache.Engine) *Server {
@@ -151,6 +155,7 @@ func NewServer(
 	api2 := app2.Group("/api")
 	v1 := api2.Group("/v1")
 	cragRouter.Init(&v1, authz)
+	memberRouter.Init(&v1, authz)
 
 	return &Server{
 		cfg:    cfg,

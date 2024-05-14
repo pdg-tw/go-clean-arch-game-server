@@ -12,6 +12,19 @@ definitions:
     - country
     - name
     type: object
+  dto.AddMemberRequest:
+    properties:
+      email:
+        type: string
+      name:
+        type: string
+      password:
+        type: string
+    required:
+    - email
+    - name
+    - password
+    type: object
   dto.UpdateCragRequest:
     properties:
       country:
@@ -185,4 +198,33 @@ paths:
       summary: Update a crag
       tags:
       - Crag
+  /member:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: The member data
+        in: body
+        name: member
+        required: true
+        schema:
+          $ref: '#/definitions/dto.AddMemberRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/responses.General'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/responses.General'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/responses.General'
+      summary: Add a new member
+      tags:
+      - Member
 swagger: "2.0"

@@ -1,16 +1,18 @@
 package app
 
 import (
-	"github.com/stretchr/testify/assert"
 	"go-clean-arch-game-server/internal/app/crag/commands"
 	"go-clean-arch-game-server/internal/app/crag/queries"
 	"go-clean-arch-game-server/internal/common/metrics"
 	"go-clean-arch-game-server/internal/domain/entities/crag"
+	"go-clean-arch-game-server/internal/domain/entities/member"
 	"go-clean-arch-game-server/internal/domain/entities/notification"
 	logger2 "go-clean-arch-game-server/pkg/logger"
 	"go-clean-arch-game-server/pkg/time"
 	"go-clean-arch-game-server/pkg/uuid"
 	"testing"
+
+	"github.com/stretchr/testify/assert"
 )
 
 func TestNewApp(t *testing.T) {
@@ -23,6 +25,7 @@ func TestNewApp(t *testing.T) {
 	up := uuid.NewUUIDProvider()
 	type args struct {
 		cragRepo            crag.Repository
+		memberRepo          member.Repository
 		notificationService notification.Service
 	}
 	tests := []struct {
@@ -51,7 +54,7 @@ func TestNewApp(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			got := NewApplication(tt.args.cragRepo, tt.args.notificationService, logger)
+			got := NewApplication(tt.args.cragRepo, tt.args.memberRepo, tt.args.notificationService, logger)
 			assert.Equal(t, tt.want, got)
 		})
 	}
